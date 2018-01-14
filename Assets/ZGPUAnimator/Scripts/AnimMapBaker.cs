@@ -163,7 +163,7 @@ public class AnimMapBaker{
         return this.bakedDataList;
     }
 
-    private void BakePerAnimClip(AnimationState curAnim)
+    public void BakePerAnimClip(AnimationState curAnim)
     {
         int curClipFrame = 0;
         float sampleTime = 0;

@@ -36,7 +36,7 @@ public class test : MonoBehaviour {
 
     public IEnumerator SwitchNext(AnimStates state, bool isLoop = true)
     {
-        Texture2D AnimMap;// = SpawnManager.instance.infos.clips[state].texture;
+        Texture2D AnimMap = Source.instance.infos.clips[state].texture;
         if (AnimMap == null)
         {
             Debug.LogError("AnimMap is null");
@@ -55,7 +55,7 @@ public class test : MonoBehaviour {
         mat.SetFloat("_SwitchTime", zTime);
         mat.EnableKeyword("_SWITCHING");
 
-        float length = SpawnManager.instance.infos.clips[state].length;
+        float length = Source.instance.infos.clips[state].length;
         yield return new WaitForSeconds(length);
         zTime = length;
         mat.DisableKeyword("_SWITCHING");

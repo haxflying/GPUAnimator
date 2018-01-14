@@ -16,8 +16,10 @@ public class ZGPUAnimatorWindow : EditorWindow {
         GetWindow<ZGPUAnimatorWindow>("GPU Animator");
     }
 
+    private GameObject currentGameobject;
+
     [SerializeField]
-    protected List<UnityEngine.GameObject> _assetList = new List<GameObject>();
+    protected List<UnityEngine.AnimationClip> _assetList = new List<AnimationClip>();
     [SerializeField]
     protected List<AnimStates> _assetState = new List<AnimStates>();
 
@@ -42,6 +44,8 @@ public class ZGPUAnimatorWindow : EditorWindow {
         GUI.skin.label.fontSize = 15;
         GUI.skin.label.alignment = TextAnchor.UpperCenter;
         GUILayout.Label("AnimationClip to bake");
+
+        EditorGUILayout.ObjectField("Current Bake Object", currentGameobject, typeof(GameObject), true);
 
         EditorGUI.BeginChangeCheck();
         EditorGUILayout.BeginHorizontal();
@@ -91,10 +95,12 @@ public class ZGPUAnimatorWindow : EditorWindow {
 
     IEnumerator bakeAndSave()
     {
+        baker.SetAnimData(currentGameobject);
         yield return new WaitForEndOfFrame();
         for (int i = 0; i < _assetList.Count; i++)
         {
-            baker.SetAnimData(_assetList[i]);
+            //baker.SetAnimData(_assetList[i]);
+            //baker.BakePerAnimClip(_assetList[i].SampleAnimation)
         }
     }
 }
