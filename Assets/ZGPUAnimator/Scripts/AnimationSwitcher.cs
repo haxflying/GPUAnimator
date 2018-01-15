@@ -2,15 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Sirenix.OdinInspector;
-public class test : MonoBehaviour {
+public class AnimationSwitcher : MonoBehaviour {
     [Range(0, 2)]
     public float timeScale;
     [Range(0f, 0.1f)]
     public float blendTime = 0.1f;
 
-    [Range(0, 6)]
     [InlineButton("Play")]
-    public int clipIndex;    
+    public AnimStates clipIndex;
+
+    [InlineButton("PlayLoop")]
+    public AnimStates clipLoopIndex;
 
     private Material mat;
     private float zTime;
@@ -20,11 +22,18 @@ public class test : MonoBehaviour {
         StartCoroutine(SwitchNext((AnimStates)clipIndex, false));
     }
 
+    private void PlayLoop()
+    {
+        StartCoroutine(SwitchNext((AnimStates)clipLoopIndex, true));
+    }
+
     private void Start()
     {
         zTime = 0f;
         props = new MaterialPropertyBlock();
         mat = GetComponent<Renderer>().material;
+        mat.SetFloat("_AnimLen", Source.instance.infos.clips[AnimStates.idle].length);
+        StartCoroutine(SwitchNext(AnimStates.idle, true));
     }
 
     private void Update()
@@ -59,6 +68,7 @@ public class test : MonoBehaviour {
         yield return new WaitForSeconds(length);
         zTime = length;
         mat.DisableKeyword("_SWITCHING");
+        mat.SetFloat("_AnimLen", length);
         mat.SetTexture("_AnimMap", AnimMap);
     }
 }

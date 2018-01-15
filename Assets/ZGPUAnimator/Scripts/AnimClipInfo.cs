@@ -17,6 +17,7 @@ public enum AnimStates
     gethit,
     victory,
     walk,
+    run,
     death
 }
 

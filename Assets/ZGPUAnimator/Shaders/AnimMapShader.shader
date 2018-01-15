@@ -25,7 +25,7 @@ Shader "chenjd/AnimMapShader"
 			#pragma fragment frag
 			//开启gpu instancing
 			#pragma multi_compile_instancing
-			#pragma shader_feature _SWITCHING
+			#pragma multi_compile __ _SWITCHING
 			#include "UnityCG.cginc"
 
 			struct appdata

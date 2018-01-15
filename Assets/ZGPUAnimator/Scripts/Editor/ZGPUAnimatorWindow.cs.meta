@@ -1,11 +1,12 @@
 fileFormatVersion: 2
 guid: 898f61e38d676fc469d65305c3b2fa4d
-timeCreated: 1515835460
+timeCreated: 1515998653
 licenseType: Pro
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - skin: {fileID: 11400000, guid: 3780773958b76fc46b8d828b9616bff5, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

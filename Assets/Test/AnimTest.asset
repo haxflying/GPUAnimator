@@ -1,0 +1,211 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 546615b233960074b8714d4e3707d9cb, type: 3}
+  m_Name: AnimTest
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 2800000, guid: 43bc75c71848eb549b456fcb4f5ecf8b, type: 2}
+    - {fileID: 2800000, guid: eff01e0772fcfe041b62d7711cb4e850, type: 2}
+    - {fileID: 2800000, guid: 60d3673becd46a1449d6c0be4052f95e, type: 2}
+    - {fileID: 2800000, guid: 7a1c75d9745aa254585530823bb7334b, type: 2}
+    - {fileID: 2800000, guid: 241b39f07cefe8c49ad2874bf0227d34, type: 2}
+    - {fileID: 2800000, guid: ec694cc4fe918684eb971a20fc8fb186, type: 2}
+    - {fileID: 2800000, guid: 01d5a1445a9b7a64a83920b0cbd1df07, type: 2}
+    - {fileID: 2800000, guid: 08b37fe9c3070dc42b7e17f7d1dc757e, type: 2}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: clips
+      Entry: 7
+      Data: 0|System.Collections.Generic.Dictionary`2[[AnimStates, Assembly-CSharp],[ClipData,
+        Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 8
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: 
+      Entry: 3
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 1|ClipData, Assembly-CSharp
+    - Name: texture
+      Entry: 10
+      Data: 0
+    - Name: length
+      Entry: 4
+      Data: 1.33333337
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: 
+      Entry: 3
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 2|ClipData, Assembly-CSharp
+    - Name: texture
+      Entry: 10
+      Data: 1
+    - Name: length
+      Entry: 4
+      Data: 1.33333337
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: 
+      Entry: 3
+      Data: 7
+    - Name: 
+      Entry: 7
+      Data: 3|ClipData, Assembly-CSharp
+    - Name: texture
+      Entry: 10
+      Data: 2
+    - Name: length
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: 
+      Entry: 3
+      Data: 3
+    - Name: 
+      Entry: 7
+      Data: 4|ClipData, Assembly-CSharp
+    - Name: texture
+      Entry: 10
+      Data: 3
+    - Name: length
+      Entry: 4
+      Data: 1.33333337
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: 
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 7
+      Data: 5|ClipData, Assembly-CSharp
+    - Name: texture
+      Entry: 10
+      Data: 4
+    - Name: length
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: 
+      Entry: 3
+      Data: 6
+    - Name: 
+      Entry: 7
+      Data: 6|ClipData, Assembly-CSharp
+    - Name: texture
+      Entry: 10
+      Data: 5
+    - Name: length
+      Entry: 4
+      Data: 0.6666667
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: 
+      Entry: 3
+      Data: 4
+    - Name: 
+      Entry: 7
+      Data: 7|ClipData, Assembly-CSharp
+    - Name: texture
+      Entry: 10
+      Data: 6
+    - Name: length
+      Entry: 4
+      Data: 3.33333349
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: 
+      Entry: 3
+      Data: 5
+    - Name: 
+      Entry: 7
+      Data: 8|ClipData, Assembly-CSharp
+    - Name: texture
+      Entry: 10
+      Data: 7
+    - Name: length
+      Entry: 4
+      Data: 1.33333337
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
